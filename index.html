@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Obnova Varnsdorfu – Náš domov</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- HORNÍ LIŠTA -->
+    <header class="header">
+        <div class="nav-container">
+
+            <a href="#uvod" class="logo">
+                <span class="logo-main">OBNOVA</span>
+                <span class="logo-city">VARNSDORFU</span>
+                <span class="logo-sub">NÁŠ DOMOV</span>
+            </a>
+
+            <nav class="navigation">
+                <a href="#">Úvod</a>
+                <a href="#program">Náš program</a>
+                <a href="#kandidati">Kandidáti</a>
+            </nav>
+
+            <!-- Menu pro mobil -->
+            <button class="menu-button" id="menuButton" aria-label="Otevřít menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+        </div>
+    </header>
+
+
+    <!-- ÚVOD -->
+    <main>
+
+        <section class="hero" id="uvod">
+
+            <div class="hero-content">
+
+                <div class="hero-text">
+                    <p class="hero-small">
+                        OBNOVA<br>
+                        VARNSDORFU
+                    </p>
+
+                    <h1>NÁŠ DOMOV</h1>
+
+                    <p class="hero-description">
+                        Program pro město, ve kterém má smysl žít.
+                    </p>
+
+                    <a href="#program" class="hero-button">
+                        Náš program
+                        <span>→</span>
+                    </a>
+                </div>
+
+                <div class="hero-design">
+    <img
+        src="images/varnsdorf-budovy.png"
+        alt="Varnsdorf"
+        class="hero-city-image"
+    >
+</div>
+
+        </section>
+
+        <!-- PROGRAM -->
+<section id="program" class="program-section">
+
+    <div class="program-container">
+
+        <div class="program-heading">
+            <p>OBNOVA VARNSDORFU</p>
+            <h2>Náš program</h2>
+            <span>
+                Šest oblastí. Jedna OBNOVA.
+            </span>
+        </div>
+
+        <div class="program-grid">
+
+            <button class="program-card" data-program="hospodareni">
+                <span class="program-letter">O</span>
+                <span class="program-name">Odpovědné hospodaření</span>
+                <span class="program-arrow">→</span>
+            </button>
+
+           <button class="program-card" data-program="bydleni">
+                <span class="program-letter">B</span>
+                <span class="program-name">Bydlení</span>
+                <span class="program-arrow">→</span>
+            </button>
+
+            <button class="program-card" data-program="prilezitosti">
+                <span class="program-letter">N</span>
+                <span class="program-name">Nové příležitosti</span>
+                <span class="program-arrow">→</span>
+            </button>
+
+            <button class="program-card" data-program="centrum">
+                <span class="program-letter">O</span>
+                <span class="program-name">Obnovené centrum</span>
+                <span class="program-arrow">→</span>
+            </button>
+
+            <button class="program-card" data-program="firmy">
+                <span class="program-letter">V</span>
+                <span class="program-name">Výkonné městské firmy</span>
+                <span class="program-arrow">→</span>
+            </button>
+
+            <button class="program-card" data-program="zdravotnictvi">
+                <span class="program-letter">A</span>
+                <span class="program-name">Ambulance a zdravotnictví</span>
+                <span class="program-arrow">→</span>
+            </button>
+
+        </div>
+<!-- DETAIL PROGRAMU -->
+<div class="program-detail" id="programDetail">
+
+    <button class="program-close" id="programClose" aria-label="Zavřít program">
+        ×
+    </button>
+
+    <div class="program-detail-top">
+        <span class="detail-letter" id="detailLetter">O</span>
+
+        <div>
+            <p class="detail-label">OBNOVA VARNSDORFU</p>
+            <h3 id="detailTitle">Odpovědné hospodaření</h3>
+            <p class="detail-subtitle" id="detailSubtitle"></p>
+        </div>
+    </div>
+
+    <div class="program-detail-content">
+        <ul id="detailList"></ul>
+        <p class="detail-ending" id="detailEnding"></p>
+    </div>
+
+</div>
+    </div>
+
+</section>
+
+        <!-- KANDIDÁTI -->
+<section id="kandidati" class="candidates-section">
+
+    <div class="candidates-container">
+
+        <div class="candidates-heading">
+            <p>OBNOVA VARNSDORFU</p>
+            <h2>Naši kandidáti</h2>
+        </div>
+
+        <div class="candidates-grid">
+
+    <article class="candidate-card">
+        <div class="candidate-info">
+            <span class="candidate-number">01</span>
+            <h3>Michal Marosz</h3>
+            <p>46 let • finanční manažer</p>
+        </div>
+    </article>
+
+    <article class="candidate-card">
+        <div class="candidate-info">
+            <span class="candidate-number">02</span>
+            <h3>MDDr. Pavel Beneš</h3>
+            <p>27 let • zubní lékař</p>
+        </div>
+    </article>
+
+    <article class="candidate-card">
+        <div class="candidate-info">
+            <span class="candidate-number">03</span>
+            <h3>Ing. Pavel Hájek</h3>
+            <p>27 let • ekonom</p>
+        </div>
+    </article>
+
+    <article class="candidate-card">
+        <div class="candidate-info">
+            <span class="candidate-number">04</span>
+            <h3>Ing. Jaroslav Draský</h3>
+            <p>73 let • jednatel firmy</p>
+        </div>
+    </article>
+
+    <article class="candidate-card">
+        <div class="candidate-info">
+            <span class="candidate-number">05</span>
+            <h3>Josef Kňourek</h3>
+            <p>75 let • podnikatel</p>
+        </div>
+    </article>
+
+    <article class="candidate-card">
+        <div class="candidate-info">
+            <span class="candidate-number">06</span>
+            <h3>Ing. Ludmila Pražanová</h3>
+            <p>65 let • pedagog a lektor</p>
+        </div>
+    </article>
+
+    <article class="candidate-card">
+        <div class="candidate-info">
+            <span class="candidate-number">07</span>
+            <h3>Mgr. Monika Maroszová</h3>
+            <p>50 let • lékárnice</p>
+        </div>
+    </article>
+
+    <article class="candidate-card">
+        <div class="candidate-info">
+            <span class="candidate-number">08</span>
+            <h3>Ing. Filip Salov</h3>
+            <p>26 let • ekonom</p>
+        </div>
+    </article>
+
+    <article class="candidate-card">
+        <div class="candidate-info">
+            <span class="candidate-number">09</span>
+            <h3>Roman Tesař</h3>
+            <p>65 let • podnikatel</p>
+        </div>
+    </article>
+
+    <article class="candidate-card">
+        <div class="candidate-info">
+            <span class="candidate-number">10</span>
+            <h3>Jaroslav Jon</h3>
+            <p>37 let • podnikatel</p>
+        </div>
+    </article>
+
+    <article class="candidate-card">
+        <div class="candidate-info">
+            <span class="candidate-number">11</span>
+            <h3>René Velagyi</h3>
+            <p>50 let • podnikatel, majitel řeznictví</p>
+        </div>
+    </article>
+
+    <article class="candidate-card">
+        <div class="candidate-info">
+            <span class="candidate-number">12</span>
+            <h3>Mgr. Viktor Novák, M.A.</h3>
+            <p>32 let • pedagog</p>
+        </div>
+    </article>
+
+    <article class="candidate-card">
+        <div class="candidate-info">
+            <span class="candidate-number">13</span>
+            <h3>Martina Sulová</h3>
+            <p>51 let • všeobecná zdravotní sestra</p>
+        </div>
+    </article>
+
+    <article class="candidate-card">
+        <div class="candidate-info">
+            <span class="candidate-number">14</span>
+            <h3>Oldřich Pavlišta</h3>
+            <p>27 let • podnikatel, truhlář</p>
+        </div>
+    </article>
+
+    <article class="candidate-card">
+        <div class="candidate-info">
+            <span class="candidate-number">15</span>
+            <h3>Pavel Fidler</h3>
+            <p>44 let • sklenář</p>
+        </div>
+    </article>
+
+    <article class="candidate-card">
+        <div class="candidate-info">
+            <span class="candidate-number">16</span>
+            <h3>Alena Baierová</h3>
+            <p>35 let • personální konzultantka</p>
+        </div>
+    </article>
+
+    <article class="candidate-card">
+        <div class="candidate-info">
+            <span class="candidate-number">17</span>
+            <h3>Jakub Palička</h3>
+            <p>27 let • servisní technik CNC strojů</p>
+        </div>
+    </article>
+
+    <article class="candidate-card">
+        <div class="candidate-info">
+            <span class="candidate-number">18</span>
+            <h3>Pavlína Vlčková</h3>
+            <p>51 let • účetní</p>
+        </div>
+    </article>
+
+    <article class="candidate-card">
+        <div class="candidate-info">
+            <span class="candidate-number">19</span>
+            <h3>Jiří Střebovský</h3>
+            <p>49 let • podnikatel</p>
+        </div>
+    </article>
+
+    <article class="candidate-card">
+        <div class="candidate-info">
+            <span class="candidate-number">20</span>
+            <h3>Petra Nováková</h3>
+            <p>41 let • uklízečka</p>
+        </div>
+    </article>
+
+    <article class="candidate-card">
+        <div class="candidate-info">
+            <span class="candidate-number">21</span>
+            <h3>František Godla</h3>
+            <p>24 let • řidič rozvozu jídla</p>
+        </div>
+    </article>
+
+</div>
+
+    </div>
+
+</section>
+
+<button class="back-to-top" id="backToTop" aria-label="Zpět nahoru">
+    ↑
+</button>
+
+<script src="script.js"></script>
+
+</main>
+</body>
+</html>
