@@ -1021,11 +1021,6 @@ a {
     transform: translateY(-4px);
 }
 
-.hero-description {
-    white-space: normal;
-    max-width: 100%;
-}
-
 /* =========================
    JAK VOLIT
 ========================= */
@@ -1125,5 +1120,13 @@ a {
     .vote-text {
         font-size: 17px;
         line-height: 1.6;
+    }
+}
+
+@media (max-width: 850px) {
+    .hero-description {
+        white-space: normal !important;
+        max-width: 100% !important;
+        width: 100%;
     }
 }
