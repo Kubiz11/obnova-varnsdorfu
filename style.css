@@ -224,7 +224,8 @@ a {
 
     font-size: 21px;
     line-height: 1.5;
-
+    white-space: nowrap;
+   
     color: #555555;
 }
 
@@ -279,16 +280,12 @@ a {
 
 .hero-city-image {
     display: block;
-
-    width: 135%;
-    max-width: 1150px;
+    width: 90%;
+    max-width: 700px;
     height: auto;
-
     object-fit: contain;
-
-    transform: translateY(35px);
-
-    filter: drop-shadow(0 20px 25px rgba(0, 0, 0, 0.08));
+    transform: translateY(10px);
+    filter: drop-shadow(0 15px 20px rgba(0, 0, 0, 0.06));
 }
 
 /* =========================
@@ -777,9 +774,10 @@ a {
     }
 
     .hero-city-image {
-    width: 130%;
-    max-width: none;
-    transform: translateX(-8%);
+    width: 95%;
+    max-width: 600px;
+    height: auto;
+    transform: translateX(0) translateY(10px);
 }
 
     .hero-small {
@@ -871,23 +869,19 @@ a {
     .hero-design {
     width: 100%;
     height: auto;
-
-    margin-top: 35px;
-
+    min-height: 0;
     display: flex;
     justify-content: center;
     align-items: center;
-
-    overflow: hidden;
+    overflow: visible;
 }
 
 .hero-city-image {
-    width: 120%;
-    max-width: 1000px;
+    width: 88%;
+    max-width: 500px;
     height: auto;
-
-    display: block;
-    transform: none;
+    transform: translateX(-8%);
+    margin: 0 auto;
 }
 
     .section {
@@ -1025,4 +1019,106 @@ a {
     background: #e3b700;
     color: #111;
     transform: translateY(-4px);
+}
+
+/* =========================
+   JAK VOLIT
+========================= */
+
+.how-to-vote {
+    padding: 90px 50px;
+    background: #173c68;
+    color: #ffffff;
+}
+
+.how-to-vote-container {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.how-to-vote-label {
+    margin: 0 0 12px;
+    color: #f2c500;
+    font-size: 15px;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.how-to-vote h2 {
+    margin: 0 0 45px;
+    max-width: none;
+    font-size: 42px;
+    line-height: 1.1;
+    font-weight: 900;
+}
+
+.vote-times {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    margin-bottom: 40px;
+}
+
+.vote-day {
+    padding: 30px 35px;
+    background: #ffffff;
+    color: #173c68;
+    border-radius: 22px;
+}
+
+.vote-day strong {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 24px;
+    font-weight: 900;
+}
+
+.vote-day span {
+    color: #e3b700;
+    font-size: 30px;
+    font-weight: 900;
+}
+
+.vote-text {
+    max-width: 1100px;
+    margin: 0;
+    font-size: 19px;
+    line-height: 1.7;
+}
+
+
+/* MOBIL */
+
+@media (max-width: 850px) {
+
+    .how-to-vote {
+        padding: 65px 22px;
+    }
+
+    .how-to-vote h2 {
+        font-size: 31px;
+        margin-bottom: 30px;
+    }
+
+    .vote-times {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .vote-day {
+        padding: 25px;
+    }
+
+    .vote-day strong {
+        font-size: 21px;
+    }
+
+    .vote-day span {
+        font-size: 26px;
+    }
+
+    .vote-text {
+        font-size: 17px;
+        line-height: 1.6;
+    }
 }
