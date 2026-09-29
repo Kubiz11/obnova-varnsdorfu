@@ -1021,6 +1021,11 @@ a {
     transform: translateY(-4px);
 }
 
+.hero-description {
+    white-space: normal;
+    max-width: 100%;
+}
+
 /* =========================
    JAK VOLIT
 ========================= */
