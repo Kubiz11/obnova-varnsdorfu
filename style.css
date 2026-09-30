@@ -863,8 +863,10 @@ a {
     }
 
     .hero-description {
-        font-size: 18px;
-    }
+    font-size: 18px;
+    white-space: normal;
+    max-width: 100%;
+}
 
     .hero-design {
     width: 100%;
@@ -1128,5 +1130,102 @@ a {
         white-space: normal !important;
         max-width: 100% !important;
         width: 100%;
+    }
+}
+
+.hero-description strong {
+    font-weight: 900;
+}
+
+/* PATIČKA */
+
+.footer {
+    background: #102f54;
+    color: #ffffff;
+    padding: 18px 30px;
+    text-align: center;
+}
+
+.footer p {
+    margin: 0;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+}
+
+/* FACEBOOK QR */
+
+.facebook-section {
+    padding: 80px 50px;
+    background: #f5f7fa;
+}
+
+.facebook-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 55px 65px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+
+    background: #173c68;
+    border-radius: 30px;
+}
+
+.facebook-text p {
+    margin: 0 0 12px;
+    color: #f2c500;
+    font-size: 15px;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.facebook-text h2 {
+    margin: 0;
+    color: #ffffff;
+    font-size: 46px;
+    line-height: 1.1;
+    font-weight: 900;
+}
+
+.facebook-qr {
+    width: 250px;
+    height: 250px;
+    object-fit: contain;
+
+    background: #ffffff;
+    padding: 15px;
+    border-radius: 22px;
+
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.18);
+}
+
+
+/* MOBIL */
+
+@media (max-width: 850px) {
+
+    .facebook-section {
+        padding: 45px 22px;
+    }
+
+    .facebook-container {
+        padding: 40px 25px;
+        flex-direction: column;
+        text-align: center;
+        gap: 30px;
+        border-radius: 24px;
+    }
+
+    .facebook-text h2 {
+        font-size: 31px;
+    }
+
+    .facebook-qr {
+        width: 210px;
+        height: 210px;
+        padding: 12px;
     }
 }
